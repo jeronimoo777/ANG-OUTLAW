@@ -13,44 +13,44 @@
   <input type="text" id="userNICK" placeholder="Ex: OUT MUZAN">
   <button onclick="verificarNICK()">Entrar</button>
 
-  <p NICK="msg"></p>
+  <p id="msg"></p>
 
   <script>
-    // 📌 Lista de IDs permitidos (você vai trocar depois)
+    // 📌 Lista de membros permitidos
     const membrosGuilda = [
-      "OUT Zeus"
-"OUT VALL MOBILE"
-"OUT HERRY"
-"OUT SETH"
-"OUT JOSXY7"
-"OUT ZP"
-"OUT MOBILADOR HS"
-"OUT VT"
-"OUT ANGRY IP"
-"OUT HELDER"
-"OUT CORINGA"
-"OUT MUZAN"
-"OUT PLATÁNA"
-"OUT MOURAD"
-"OUT ANGOLANO"
-"OUT FILIPE"
-"OUT PRIME SEOK"
-"OUT MORENO"
-"OUT LIL BLACK etc"
-"OUT BRUXO"
-"OUT MIRA.MLC"
+      "OUT Zeus",
+      "OUT VALL MOBILE",
+      "OUT HERRY",
+      "OUT SETH",
+      "OUT JOSXY7",
+      "OUT ZP",
+      "OUT MOBILADOR HS",
+      "OUT VT",
+      "OUT ANGRY IP",
+      "OUT HELDER",
+      "OUT CORINGA",
+      "OUT MUZAN",
+      "OUT PLATÁNA",
+      "OUT MOURAD",
+      "OUT ANGOLANO",
+      "OUT FILIPE",
+      "OUT PRIME SEOK",
+      "OUT MORENO",
+      "OUT LIL BLACK",
+      "OUT BRUXO",
+      "OUT MIRA.MLC"
     ];
 
     function verificarNICK() {
-      const NICK = document.getElementBynick ("userNICK").value;
+      const nick = document.getElementById("userNICK").value.trim();
 
-      if (membrosGuilda.includes(NICK)) {
+      if (membrosGuilda.includes(nick)) {
         // salva acesso temporário
         localStorage.setItem("acessoGuilda", "liberado");
         window.location.href = "interna.html";
       } else {
-        document.getElementBynick("msg").innerText =
-❌NICK não encontrado na guilda "
+        document.getElementById("msg").innerText =
+          "❌ NICK não encontrado na guilda";
       }
     }
   </script>
