@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilda Free Fire Angolana</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000, #1a1a1a);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ff3b3b;
+      margin-top: 20px;
+    }
+
+    .box {
+      background: #1f1f1f;
+      padding: 15px;
+      margin: 15px auto;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+
+    .btn {
+      display: block;
+      width: 80%;
+      max-width: 300px;
+      margin: 15px auto;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .cadastro {
+      background-color: #ff3b3b;
+    }
+
+    .cadastro:hover {
+      background-color: #cc2f2f;
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    .whatsapp:hover {
+      background-color: #1da851;
+    }
+
+    .msg {
+      color: #00ff99;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    ul {
+      text-align: left;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🔥 Guilda Free Fire Angola 🔥</h1>
+  <p>Site oficial da ANG OUTLAW</p>
+
+  <!-- SOBRE A GUILDA -->
+  <div class="box">
+    <h2>📌 Sobre a Guilda</h2>
+    <p>
+      A nossa guilda é uma equipa angolana de Free Fire focada em competição e subir o nível da guilda
+      evolução e amizade. Procuramos jogadores ativos, respeitadores e com vontade de crescer.
+    </p>
+  </div>
+
+  <!-- REGRAS -->
+  <div class="box">
+    <h2>📜 Regras</h2>
+    <ul>
+      <li>Respeitar todos os membros</li>
+      <li>Fazer 4mil pontos semanais</li>
+      <li>Ser ativo no jogo</li>
+      <li>Não usar hacks</li>
+      <li>Participar nos treinos e salas</li>
+    </ul>
+  </div>
+
+  <!-- ADMINISTRADORES -->
+  <div class="box">
+    <h2>👑 Administradores</h2>
+
+    <p><b>Criador do Site:</b><br>
+      OUT MUZAN - ID: 10523813814
+    </p>
+
+    <p><b>Admin 1:</b><br>
+      OUT HERRY - ID: 7122763145
+    </p>
+
+    <p><b>Admin 2:</b><br>
+      OUT CORINGA - ID: 7635254196
+    </p>
+  </div>
+
+  <!-- BOTÕES -->
+  <div class="box">
+    <h2>🚀 Entrar na Guilda</h2>
+
+
+  <button class="btn cadastro" onclick="cadastro()">
+    📋 Fazer Cadastro
+  </button>
+
+  <!-- BOTÃO ADMINISTRADORES -->
+<button class="btn whatsapp" onclick="mostrarAdmins()">
+  💬 Falar com Administradores
+</button>
+
+<div id="admins" style="display:none; margin-top:10px;">
+  <a class="btn whatsapp" href="https://wa.me/244956751969" target="_blank">
+    👑 Falar com Admin 1
+  </a>
+
+  <a class="btn whatsapp" href="https://wa.me/244942474522" target="_blank">
+    👑 Falar com Admin 2
+  </a>
+</div>
+
+  <!-- WhatsApp do CRIADOR -->
+  <a class="btn whatsapp" href="https://wa.me/244939055513" target="_blank">
+    👑 Falar com o Criador
+  </a>
+
+  <p id="msg" class="msg"></p>
+</div>
+  </div>
+
+  <script>
+    function cadastro() {
+      document.getElementById("msg").innerText =
+        "✅ Seu cadastro foi feito";
+    }
+  </script>
+<script>
+  function mostrarAdmins() {
+    const box = document.getElementById("admins");
+
+    if (box.style.display === "none") {
+      box.style.display = "block";
+    } else {
+      box.style.display = "none";
+    }
+  }
+
+  function cadastro() {
+    document.getElementById("msg").innerText =
+      "✅ Seu cadastro foi feito";
+  }
+
+</script>
+</body>
+</html>
+<a href="login.html">
+  <button>Informações internas da guilda</button>
+</a>

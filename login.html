@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Acesso Interno da Guilda</title>
+</head>
+<body>
+
+  <h2>🔐 Área Restrita da Guilda</h2>
+
+  <p>Digite seu NICK do Free Fire:</p>
+
+  <input type="text" id="userNICK" placeholder="Ex: OUT MUZAN">
+  <button onclick="verificarNICK()">Entrar</button>
+
+  <p NICK="msg"></p>
+
+  <script>
+    // 📌 Lista de IDs permitidos (você vai trocar depois)
+    const membrosGuilda = [
+      "OUT Zeus"
+"OUT VALL MOBILE"
+"OUT HERRY"
+"OUT SETH"
+"OUT JOSXY7"
+"OUT ZP"
+"OUT MOBILADOR HS"
+"OUT VT"
+"OUT ANGRY IP"
+"OUT HELDER"
+"OUT CORINGA"
+"OUT MUZAN"
+"OUT PLATÁNA"
+"OUT MOURAD"
+"OUT ANGOLANO"
+"OUT FILIPE"
+"OUT PRIME SEOK"
+"OUT MORENO"
+"OUT LIL BLACK etc"
+"OUT BRUXO"
+"OUT MIRA.MLC"
+    ];
+
+    function verificarNICK() {
+      const NICK = document.getElementBynick ("userNICK").value;
+
+      if (membrosGuilda.includes(NICK)) {
+        // salva acesso temporário
+        localStorage.setItem("acessoGuilda", "liberado");
+        window.location.href = "interna.html";
+      } else {
+        document.getElementBynick("msg").innerText =
+❌NICK não encontrado na guilda "
+      }
+    }
+  </script>
+
+</body>
+</html>
